@@ -60,3 +60,5 @@ CLONING
 
 cloning a remote repository and pull it into your local machine using:
 'git clone githubRepositoryURL'
+
+BRANCHING AND MERGING
