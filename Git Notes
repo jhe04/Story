@@ -1,0 +1,20 @@
+to initialize git, use:
+'git init' inside the terminal
+
+In order to track the file you're making changes to, you'll need to put it into a staging area. This is essentially an intermediate place where you can choose and pick which files inside your working directory you want to commit
+
+To see what's currently inside the staging area of your working directory, use:
+'git status' inside the terminal
+-> untracked files show up in red. This means these are files inside your working directory, but is not yet in the staging area
+
+To add an untracked file into the staging area, use:
+'git add filename' in terminal
+
+To commit the file under version control, use:
+git commit -m "message you want to say"
+--> '-m' flag adds a commit message. This is important to help keep track of what changes you have made in each commit. When you create a new save point, you want to be as explicit as possible about what changes were made between the last save point and the current save point.
+
+You can see what commits you have made using:
+'git log' in terminal
+--> the hash uniquely identifies this specific commit (usually a long chain of numbers and letters)
+--> at the very end, you see the commit message
