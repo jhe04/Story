@@ -55,3 +55,8 @@ Alternatively, use 'git rm --cached filename' to remove specific file
 Inside .gitignore file, you must add each file that wants to be ignored in separate lines.
 #Pod Files --> use pound sign to create comments
 *.txt --> all files with .txt extension will be ignored.
+
+CLONING
+
+cloning a remote repository and pull it into your local machine using:
+'git clone githubRepositoryURL'
