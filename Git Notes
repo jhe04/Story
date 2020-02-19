@@ -3,6 +3,10 @@ to initialize git, use:
 
 In order to track the file you're making changes to, you'll need to put it into a staging area. This is essentially an intermediate place where you can choose and pick which files inside your working directory you want to commit
 
+Flow for Git:
+Working directory --add--> Staging Area --commit--> Local Repository
+-> the reason we have a staging area as a middle ground is to figure out which files we actually want to commit, since you may not want all of your files to be committed.
+
 To see what's currently inside the staging area of your working directory, use:
 'git status' inside the terminal
 -> untracked files show up in red. This means these are files inside your working directory, but is not yet in the staging area
@@ -18,3 +22,11 @@ You can see what commits you have made using:
 'git log' in terminal
 --> the hash uniquely identifies this specific commit (usually a long chain of numbers and letters)
 --> at the very end, you see the commit message
+
+Instead of adding files 1 by 1 into staging area, use:
+'git add .' to add EVERYTHING inside the current directory into staging
+
+Can revert back to the latest version inside the local respository:
+--> For example, after making an initial commit to file 'chapter3.txt', make random changes and save it on the file. Then use 'git status', and you'll see 'modified', which shows which files have been changed since the previous commit.
+--> Use 'git diff filename' to check difference between previous version in repository and current version.
+--> use 'git checkout filename' to rollback file to last version that was committed in our local repository 
