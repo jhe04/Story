@@ -1,3 +1,5 @@
+CREATING LOCAL REPOSITORY
+
 to initialize git, use:
 'git init' inside the terminal
 
@@ -26,7 +28,15 @@ You can see what commits you have made using:
 Instead of adding files 1 by 1 into staging area, use:
 'git add .' to add EVERYTHING inside the current directory into staging
 
-Can revert back to the latest version inside the local respository:
+Can revert back to the latest version inside the local repository:
 --> For example, after making an initial commit to file 'chapter3.txt', make random changes and save it on the file. Then use 'git status', and you'll see 'modified', which shows which files have been changed since the previous commit.
 --> Use 'git diff filename' to check difference between previous version in repository and current version.
---> use 'git checkout filename' to rollback file to last version that was committed in our local repository 
+--> use 'git checkout filename' to rollback file to last version that was committed in our local repository
+
+CREATING REMOTE REPOSITORY
+
+Go to Github and create a new repository.
+--> create a remote using 'git remote add origin githubRepositoryURL'. By convention, use 'origin', but it can technically be named anything you want.
+--> next, push the local repository into the remote repository using:
+'git push -u origin master'; push a local repository onto this origin remote, and we're going to push it to the master branch.
+--> '-u' flag links your local and remote repository. 'origin' is the name of Remote, and 'master' is name of Branch. Mater branch is the default/main branch of all your commits (it is sequential).
