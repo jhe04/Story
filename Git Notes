@@ -92,3 +92,8 @@ Merging can also be done inside GitHub itself, rather than using the terminal
 
 
 FORKING AND PULL REQUESTS
+
+--> Forking a copy of remote repository to your own remote repository. Go on someone's repository and click "Fork".
+--> Then you would clone the copy into your local environment.
+--> after changes are made to local, you would push onto copy of remote repository
+--> lastly, you would send a pull request to the original repository
