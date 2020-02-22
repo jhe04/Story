@@ -63,4 +63,16 @@ cloning a remote repository and pull it into your local machine using:
 
 BRANCHING AND MERGING
 
-Test 1
+Instead of continuing to commit to the Master branch, we can create a side branch. We can create as many branches as we want. Simultaneously, we can continue to work on the main branch, pushing out essential updates/codes that maintain our main project.
+
+Sometimes you may be working on new features, or fixing a bug, and all of these things may break your main project, so you don't want to do it on the Master branch. You only want to put it on to the Master branch once you know everything is working fine.
+
+--> Create a new branch using:
+'git branch nameOfBranch'
+
+--> List all branches using:
+'git branch'
+The branch that has the asterix* beside it is the branch you are currently on
+
+--> switch to different branch using:
+'git checkout nameOfBranch'
