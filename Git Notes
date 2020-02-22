@@ -76,3 +76,19 @@ The branch that has the asterix* beside it is the branch you are currently on
 
 --> switch to different branch using:
 'git checkout nameOfBranch'
+
+--> Merge side branch into master branch. Must first be inside master branch. Then use:
+'git merge nameOfBranch'
+
+Merging can also be done inside GitHub itself, rather than using the terminal
+--> create new repository and initialize with a README. This is essentially a file that tells people what your repository is all about (how to use, how to incorporate, useful stuff, etc.)
+--> create new file inside repository (e.g. chapter1). Make a commit to the master branch.
+--> Create a new branch and switch to it. Edit chapter1 and commit to new branch.
+--> Now you have a notification to 'compare and pull request' between master and new branch. This tells you that you have changes that are not reflected in your master branch. Do you want to pull those changes over to the master branch?
+--> Inside master branch, create new file (e.g. chapter2). Make commit to master branch.
+--> In order to pull, you have to be in the branch where you want to do the pulling, which is the master branch.
+--> Click "new pull request", which takes you to the Compare page. Set base as master branch, and compare to new branch. You'll be able to see the difference between the two. '+' is addition. red highlight is erasion.
+--> Click "Create pull request", which will merge the two branches.
+
+
+FORKING AND PULL REQUESTS
